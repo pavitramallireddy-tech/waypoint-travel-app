@@ -4,6 +4,30 @@ A travel exploration app: browse curated destinations, check live weather for an
 
 **Live demo:** https://waypoint-travel-app-one.vercel.app/
 **Repo:** https://github.com/pavitramallireddy-tech/waypoint-travel-app
+## Screenshots
+
+### Home Page
+## Screenshots
+
+### Home Page
+
+![Home Page](home.png)
+
+### Destination Explorer
+
+![Destination Explorer]destination_explorer.png)
+
+### Destination Details
+
+![Destination Details](destination.png)
+
+### AI Chatbot
+
+![AI Chatbot](chatbot.png)
+
+### AI Itinerary
+
+![AI Itinerary](itinerary.png)
 
 ## Features
 
