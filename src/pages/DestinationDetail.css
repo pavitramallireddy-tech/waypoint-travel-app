@@ -1,0 +1,139 @@
+.dest-hero {
+  position: relative;
+  color: var(--bone);
+}
+
+.dest-hero-image {
+  width: 100%;
+  border-radius: 0;
+}
+
+.dest-hero-image::after {
+  content: "";
+}
+
+.dest-hero {
+  overflow: hidden;
+}
+
+.dest-hero .async-image {
+  filter: brightness(0.55);
+}
+
+.dest-hero-content {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+}
+
+.dest-back {
+  color: var(--bone);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.dest-back:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.dest-hero-content h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  margin-top: 0.75rem;
+}
+
+.dest-hero-country {
+  margin-top: 0.4rem;
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+.dest-overview {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+}
+
+.dest-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.dest-highlights {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dest-highlights li {
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 0.98rem;
+}
+
+.dest-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: var(--brass);
+  border-radius: 50%;
+}
+
+.dest-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-left: 1px solid var(--line);
+  padding-left: 2rem;
+}
+
+.dest-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dest-fact span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.dest-fact strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.dest-section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-top: 0.75rem;
+}
+
+.dest-section-sub {
+  margin-top: 0.9rem;
+  max-width: 60ch;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 800px) {
+  .dest-overview {
+    grid-template-columns: 1fr;
+  }
+  .dest-sidebar {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+  }
+}

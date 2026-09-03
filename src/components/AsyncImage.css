@@ -1,0 +1,36 @@
+.async-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--parchment-soft);
+}
+
+.async-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+
+.async-image-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--parchment-soft),
+    var(--parchment-soft) 10px,
+    #e6dfcd 10px,
+    #e6dfcd 20px
+  );
+}
+
+.async-image-fallback--muted {
+  opacity: 0.75;
+}

@@ -1,0 +1,47 @@
+.dest-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  background: var(--parchment-soft);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.dest-card:hover,
+.dest-card:focus-visible {
+  border-color: var(--brass);
+}
+
+.dest-card:hover .async-image img,
+.dest-card:focus-visible .async-image img {
+  transform: scale(1.04);
+}
+
+.dest-card-body {
+  padding: 1.15rem 1.25rem 1.4rem;
+}
+
+.dest-card-coord {
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.dest-card-name {
+  font-size: 1.35rem;
+  margin-top: 0.5rem;
+}
+
+.dest-card-country {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+
+.dest-card-tagline {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--charcoal);
+}

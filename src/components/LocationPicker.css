@@ -1,0 +1,78 @@
+.location-picker {
+  position: relative;
+  max-width: 520px;
+}
+
+.location-picker-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.location-search-box {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--parchment-soft);
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-s);
+}
+
+.location-search-box:focus-within {
+  border-color: var(--brass);
+}
+
+.location-search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.location-btn {
+  white-space: nowrap;
+  font-size: 0.85rem;
+  padding: 0.65rem 1.1rem;
+}
+
+.location-suggestions {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+  background: var(--parchment-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(16, 27, 45, 0.12);
+}
+
+.location-suggestions button {
+  width: 100%;
+  text-align: left;
+  padding: 0.65rem 0.9rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.location-suggestions button:hover,
+.location-suggestions button:focus-visible {
+  background: var(--parchment);
+}
+
+.location-note {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.location-note--ok {
+  color: var(--teal);
+}

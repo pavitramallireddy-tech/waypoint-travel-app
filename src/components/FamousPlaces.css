@@ -1,0 +1,37 @@
+.famous-places {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.famous-place {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.famous-place:nth-child(even) .famous-place-media {
+  order: 2;
+}
+
+.famous-place-body h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.9rem;
+}
+
+.famous-place-body p {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  max-width: 46ch;
+}
+
+@media (max-width: 760px) {
+  .famous-place {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .famous-place:nth-child(even) .famous-place-media {
+    order: 0;
+  }
+}
