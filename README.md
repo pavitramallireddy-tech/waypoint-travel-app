@@ -11,11 +11,11 @@ A travel exploration app: browse curated destinations, check live weather for an
 
 ### Home Page
 
-![Home Page](home.png)
+![Home Page](homepage.png)
 
 ### Destination Explorer
 
-![Destination Explorer]destination_explorer.png)
+![Destination Explorer](destination_explorer.png)
 
 ### Destination Details
 
