@@ -2,26 +2,8 @@
 
 A travel exploration app: browse curated destinations, check live weather for any place (including your own), read through properly presented highlights for each destination, and hand the trip-planning off to an AI assistant that turns "3 days, relaxed pace" into a real day-by-day itinerary.
 
-**Live demo:** _add your deployed URL here_
-**Repo:** _add your GitHub URL here_
-
-## Screenshots
-
-_Add screenshots here once deployed — a few suggestions for what to capture:_
-- `docs/screenshot-home.png` — the hero + homepage
-- `docs/screenshot-explore.png` — the destination explorer with search/filter
-- `docs/screenshot-detail.png` — a destination page with weather + famous places
-- `docs/screenshot-itinerary.png` — a generated itinerary
-- `docs/screenshot-chatbot.png` — the assistant open
-- `docs/screenshot-mobile.png` — a phone-width view
-
-```md
-![Home](docs/screenshot-home.png)
-![Explore](docs/screenshot-explore.png)
-![Destination detail](docs/screenshot-detail.png)
-![Itinerary](docs/screenshot-itinerary.png)
-![Chatbot](docs/screenshot-chatbot.png)
-```
+**Live demo:** https://waypoint-travel-app-one.vercel.app/
+**Repo:** https://github.com/pavitramallireddy-tech/waypoint-travel-app
 
 ## Features
 
@@ -44,7 +26,7 @@ _Add screenshots here once deployed — a few suggestions for what to capture:_
 - Plain CSS with custom properties (no UI framework) — see the design tokens at the top of `src/styles/global.css`
 - OpenWeather API (weather + geocoding)
 - Pexels API (images)
-- Google Gemini API (`gemini-2.0-flash`) for the chatbot and itinerary generation
+- Google Gemini API for the chatbot and itinerary generation
 
 ## Project structure
 
@@ -59,6 +41,8 @@ src/
   context/        LocationContext (visitor's location), ActiveDestinationContext (chatbot context)
   styles/         global.css (design tokens + base styles)
 ```
+
+Destinations span six continents (Asia, Europe, Africa, North America, South America, Oceania), including a dedicated cluster of Indian destinations (Jaipur, Agra, Varanasi, the Kerala backwaters, Goa, Ladakh, Udaipur) alongside long-standing entries like Kyoto, Reykjavík, Machu Picchu, and Santorini.
 
 ## Running locally
 
@@ -101,6 +85,7 @@ Built with Vite, so it deploys as a static site to Vercel, Netlify, or GitHub Pa
 2. On Vercel/Netlify: import the repo, framework preset "Vite," build command `npm run build`, output directory `dist`.
 3. Add the three `VITE_...` environment variables in the host's project settings (not in the repo).
 4. Deploy, then open the live URL in a private/incognito window to confirm it works without any local `.env.local`.
+5. On Vercel specifically, check **Settings → Deployment Protection** is set to disabled/public — it defaults to requiring a Vercel login on some account tiers, which will block visitors from viewing the live site.
 
 ## Design notes
 
